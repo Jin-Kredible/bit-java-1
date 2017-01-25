@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+<h1 align="middle">Jin's Sign Up Page</h1>
+	<center>
+	<form action="SignUp" method="post">
+	<table border="1" cellpadding="3" float="top" width=500>
+	
+		<tr align="center">
+		<td><br>아이디 : <input type="text" name="id"><br></td>
+		</tr>
+		<tr align="center">
+		<td><br>패스워드: <input type="password" name="password"><br></td>
+		</tr>
+		<tr align="center">
+		<td>성별: <input type="radio" name="gender" value="male"> 남	<input type="radio"	 name="gender" value="female"> 여</td>
+		</tr>
+		<tr align="center">
+		<td>전화번호:  
+		<select name="phone1">
+			<option value="010">010</option>
+			<option value="011">011</option>
+			<option value="016">016</option>
+			<option value="070">070</option>
+			<option	value="02">02</option>
+		</select>
+		<input type="text" name="phone2">
+		</tr >
+		<tr align="center">
+		<td>주소: <input type="text" name="address">
+		</tr>
+		
+	</table>
+	<br>
+	<input type="button" value="홈" onClick="location.href='WebTemplate.jsp?BODY_PATH=HomePage.html'";>
+	<input type="submit" value="회원가입">
+	<input type="reset" value="취소">
+	<input type=button value="되돌아가기" onClick="history.back();">
+	</form>
+	</center>
+</body>
+</html>
